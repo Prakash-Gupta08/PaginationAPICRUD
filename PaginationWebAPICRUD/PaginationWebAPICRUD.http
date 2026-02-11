@@ -1,0 +1,6 @@
+@PaginationWebAPICRUD_HostAddress = http://localhost:5063
+
+GET {{PaginationWebAPICRUD_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
