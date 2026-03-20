@@ -83,7 +83,7 @@ namespace PaginationWebAPICRUD.Services
                 }
                 else if (req.SortBy.ToLower() == "price")
                 {
-                    data = req.SortOrder == "desc"
+                    data = req.SortOrder == "desc order"
                         ? data.OrderByDescending(s => s.item_price)
                         : data.OrderBy(s => s.item_price);
                 }

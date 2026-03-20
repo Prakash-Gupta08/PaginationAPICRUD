@@ -59,7 +59,7 @@ namespace PaginationWebAPICRUD.Controllers
             return Ok(res);
         }
 
-        [HttpPut("UpdateItem")]
+        [HttpPut("UpdateIteminpage")]
         public async Task<ActionResult> UpdateItem(ItemUpdateRequest req)
         {
             var newItem = await _context.UpdateItem(req);
