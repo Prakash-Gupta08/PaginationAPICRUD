@@ -50,7 +50,7 @@ namespace PaginationWebAPICRUD.Services
                 Data = res
             };
 
-
+            
         }
 
         public async Task<gadet> CreateItems(gadet req)
@@ -77,7 +77,7 @@ namespace PaginationWebAPICRUD.Services
             {
                 if (req.SortBy.ToLower() == "name")
                 {
-                    data = req.SortOrder == "desc"
+                    data = req.SortOrder == "desc order"
                         ? data.OrderByDescending(s => s.item_name)
                         : data.OrderBy(s => s.item_name);
                 }
