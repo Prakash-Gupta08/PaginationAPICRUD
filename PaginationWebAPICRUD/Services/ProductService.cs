@@ -81,7 +81,7 @@ namespace PaginationWebAPICRUD.Services
                         ? data.OrderByDescending(s => s.item_name)
                         : data.OrderBy(s => s.item_name);
                 }
-                else if (req.SortBy.ToLower() == "price in branch")
+                else if (req.SortBy.ToLower() == "price in branch update")
                 {
                     data = req.SortOrder == "desc order"
                         ? data.OrderByDescending(s => s.item_price)
